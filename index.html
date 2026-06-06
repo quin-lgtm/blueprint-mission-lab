@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030912" />
+    <title>Blueprint of Water — Mission Lab</title>
+    <meta name="description" content="A cinematic mission-page prototype for Blueprint of Water." />
+  </head>
+  <body>
+    <div id="water-stage" aria-hidden="true"></div>
+    <div class="ambient-grain" aria-hidden="true"></div>
+    <button class="debug-button" type="button" data-debug-toggle aria-label="Toggle visual tuning panel">Tune</button>
+
+    <main class="mission-page">
+      <section class="section hero" data-section="source">
+        <div class="navline">Blueprint of Water <span>Mission Lab</span></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">The why behind the work</p>
+          <h1>Mission</h1>
+          <p class="lede">Water is everywhere. That is why it is easy to forget how finite it is.</p>
+          <p class="quiet">Blueprint of Water exists to make invisible chemistry visible, to turn water-treatment principles into practical judgment, and to help people preserve what every system depends on.</p>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">follow the current</div>
+      </section>
+
+      <section class="section chemistry" data-section="chemistry">
+        <div class="statement reveal">
+          <p class="eyebrow">Invisible chemistry</p>
+          <h2>The smallest things in water decide the largest outcomes.</h2>
+          <p>Calcium. Magnesium. Silica. Nitrate. Chloride. Bicarbonate. They are easy to ignore because they are unseen. But they shape scale, corrosion, cycles, blowdown, failure, and waste.</p>
+          <p>Teaching water begins with teaching people to notice what the eye cannot see.</p>
+        </div>
+      </section>
+
+      <section class="section drop" data-section="drop">
+        <div class="statement narrow reveal">
+          <p class="eyebrow">The drop</p>
+          <h2>A few principles can change the fate of an entire system.</h2>
+          <p>One better decision at a cooling tower. One operator who understands cycles of concentration. One facility that controls chemistry before damage becomes routine.</p>
+          <p>The difference can begin as a number on a chart and end as thousands of gallons that never had to be wasted.</p>
+        </div>
+      </section>
+
+      <section class="section energy" data-section="energy">
+        <div class="statement reveal">
+          <p class="eyebrow">Energy in motion</p>
+          <h2>Water carries force, heat, minerals, consequences, and opportunity.</h2>
+          <p>Every pipe, vessel, tower, loop, and valve is a negotiation with energy. When people understand that motion, treatment stops feeling like maintenance and starts becoming stewardship.</p>
+        </div>
+      </section>
+
+      <section class="section treatment" data-section="treatment">
+        <div class="statement narrow reveal">
+          <p class="eyebrow">Treatment as stewardship</p>
+          <h2>The goal is not more information. The goal is better judgment.</h2>
+          <p>Blueprint of Water teaches the principles behind the controls: scale, corrosion, solubility, concentration, heat transfer, mass balance, and chemical behavior.</p>
+          <p>Understanding those principles gives people the confidence to preserve water before waste becomes invisible again.</p>
+        </div>
+      </section>
+
+      <section class="section scale" data-section="scale">
+        <div class="scale-grid reveal">
+          <p class="eyebrow">The scale of saving</p>
+          <h2>Thousands become millions. Millions become billions.</h2>
+          <div class="scale-cards" aria-label="Scale of water impact">
+            <article><strong>1</strong><span>operator sees the system differently</span></article>
+            <article><strong>1,000s</strong><span>of gallons saved by better control</span></article>
+            <article><strong>1,000,000s</strong><span>saved when principles spread across facilities</span></article>
+            <article><strong>1,000,000,000s</strong><span>possible when an industry treats knowledge as infrastructure</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final" data-section="final">
+        <div class="final-card reveal">
+          <p class="eyebrow">Final mission</p>
+          <h2>Make water knowledge beautiful enough to remember and practical enough to matter.</h2>
+          <p>Blueprint of Water is built for the people who protect systems most of the world never sees. The mission is to teach clearly, reveal the invisible, and turn understanding into conservation.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="debug-panel" data-debug-panel aria-label="Mission Lab tuning panel">
+      <header>
+        <strong>Mission Lab Tuning</strong>
+        <span>Press D or use Tune</span>
+      </header>
+      <label>Water speed <input data-tune="waterSpeed" type="range" min="0.2" max="2" step="0.01" value="1" /></label>
+      <label>Ion density <input data-tune="ionDensity" type="range" min="0.15" max="1" step="0.01" value="0.78" /></label>
+      <label>Mist intensity <input data-tune="mistIntensity" type="range" min="0" max="1" step="0.01" value="0.68" /></label>
+      <label>Glow strength <input data-tune="glowStrength" type="range" min="0.2" max="1.5" step="0.01" value="1" /></label>
+      <label>Waterfall width <input data-tune="waterfallWidth" type="range" min="0.55" max="1.8" step="0.01" value="1" /></label>
+      <label>Turbulence <input data-tune="turbulence" type="range" min="0" max="1" step="0.01" value="0.42" /></label>
+      <p>PixiJS owns only the cinematic water layer. Text and layout remain accessible HTML.</p>
+    </aside>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
